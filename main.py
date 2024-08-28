@@ -3,7 +3,7 @@ from config import TOP_POSTS_TIME_FILTER, MAXIMUM_POSTS_PER_SUBREDDIT, SUBREDDIT
 from data_gatherer import DataGatherer
 from analyzer import MoralScoreAnalyzer
 from preprocessing import Preprocessing
-from moral_dictionary import MoralCentroid
+from moral_dictionary import MoralCentroids, moral_dict, word2vec_model
 
 if __name__ == "__main__":
     # Initialize DataGatherer and Preprocessing classes
@@ -45,4 +45,4 @@ if __name__ == "__main__":
     # Print out average values for each dimension
     print("Average values for each moral dimension:")
     for dimension, avg_value in analyzer.average_scores.items():
-        print(f"{dimension}: {avg_value:.4f}")
+        print(f"{dimension}: {avg_value:.2f}")

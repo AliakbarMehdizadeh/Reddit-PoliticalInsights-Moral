@@ -5,6 +5,8 @@ from nltk.tokenize import word_tokenize
 # Ensure stopwords are downloaded
 nltk.download('stopwords')
 nltk.download('punkt')
+from typing import List
+
 
 class Preprocessing:
         
